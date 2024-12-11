@@ -1,0 +1,283 @@
+:root {
+  --black: #070f18;
+  --white: #f5f6fb;
+  --Blue: #207dff;
+  --Orange: #f06157;
+  --Grey: #575455;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  background-color: var(--white);
+  color: var(--Grey);
+  font-weight: normal;
+}
+
+.navbar {
+  display: none;
+  list-style-type: none;
+  gap: 59px;
+}
+
+.active {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.active {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sub-heading {
+  color: var(--Orange);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-grey {
+  color: var(--Grey);
+}
+
+button {
+  width: 180px;
+  height: 48px;
+  background-color: var(--Blue);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hero-wraper {
+  margin-bottom: 50px;
+}
+
+.hero-wraper img {
+  display: none;
+}
+
+.hero-wraper p {
+  margin: 30px 0;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.Companies-logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.work-wraper {
+  text-align: center;
+}
+
+.work-wraper h2 {
+  margin: 5px 0;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.card h5 {
+  margin-bottom: -5px;
+}
+
+.footer-wraper {
+  text-align: center;
+}
+
+.footer-wraper h2 {
+  margin: 5px 0;
+}
+.input-grup {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  background-color: var(--white);
+  color: var(--Grey);
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  header button {
+    display: none;
+  }
+
+  br {
+    display: none;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .logo-wrapper {
+    align-items: start;
+  }
+  .logo-wrapper img {
+    width: 80px;
+  }
+  .footer-wraper img {
+    width: 100%;
+  }
+  .input-grup {
+    flex-direction: column;
+  }
+  .input-grup button {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1440px) {
+  header {
+    margin-bottom: 100px;
+  }
+  .hero-wraper {
+    text-align: center;
+  }
+  .logo-wrapper img {
+    width: 100px;
+  }
+  .Companies-logo {
+    gap: 20px;
+    margin: 30px 0;
+  }
+  .card {
+    width: 250px;
+  }
+  .footer-wraper img {
+    width: 522px;
+  }
+  .input-grup {
+    margin: 40px 0;
+    justify-content: center;
+  }
+  .input-grup input {
+    width: 30%;
+  }
+  .input-grup button {
+    margin-left: -50px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    padding: 40px 120px;
+  }
+  .navbar {
+    display: flex;
+  }
+  .hero-wraper {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .Hero-text {
+    text-align: start;
+  }
+  .hero-wraper img {
+    display: block;
+  }
+  .logo-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .logo-wrapper img {
+    width: 100px;
+    height: fit-content;
+  }
+  .Companies-logo {
+    align-items: center;
+  }
+  .work-wraper {
+    margin-bottom: 70px;
+  }
+  .card-wrapper {
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  .card {
+    width: 330px;
+    height: 106px;
+  }
+  .footer-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 80px;
+  }
+  .input-grup {
+    /* margin: 0; */
+    margin-top: 40px;
+    justify-content: start;
+  }
+  .input-grup input {
+    width: 250px;
+  }
+  .input-grup button {
+    margin-left: -600;
+  }
+}
